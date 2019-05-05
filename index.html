@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Examen DAW Final Jquery</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/shop-homepage.css" rel="stylesheet">
+
+	<!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="js.js"></script>
+  </head>
+  
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <h2>Gestion de tareas</h2>
+		<button type="button" id="btnNuevaTarea" class="btn btn-success">Nueva Tarea</button>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+       <div class="col-lg-3">
+
+          <div id="estados" class="list-group">
+		  
+           <!-- Estados de las tareas -->
+          
+		  </div>
+        </div>      
+	   <div class="col-lg-9">
+		 
+		 <div id="tareas" >
+		    
+			<!-- Lista de tareas -->
+                      
+         </div>
+       </div>
+     </div>
+    </div>
+
+	
+	<!-- Modal Tarea -->
+	  <div class="modal fade" id="modalTarea" role="dialog">
+		<div class="modal-dialog">
+		
+		  <!-- Modal content-->
+		  <div class="modal-content">
+			<div class="modal-header">			  
+			  <h4 class="modal-title">Nueva Tarea</h4>
+			  <button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+			<div class="modal-body"> 			  
+				 <form id="ficha" name="ficha"> 
+				  <div class="form-group">
+					<label for="id">Id</label>
+					<input type="input" class="form-control" id="id" name="id">
+				  </div>
+				  <div class="form-group">
+					<label for="id">Nombre</label>
+					<input type="input" class="form-control" id="nombre" name="nombre">
+				  </div>
+				  <div class="form-group">
+					<label for="id">Estado</label>
+					<input type="input" class="form-control" id="estado" name="estado" value="Pendiente" readonly>
+				  </div>
+				</form>			  
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+			  <button type="button" id="btnGrabar" class="btn btn-success">Grabar Tarea</button>
+			</div>
+		  </div>
+		  
+		</div>
+	  </div>
+
+  </body>
+
+</html>

@@ -1,0 +1,39 @@
+{
+  "estados": [
+    {
+      "id": "e1",
+      "nombre": "Pendiente"
+    },
+    {
+      "id": "e2",
+      "nombre": "Realizada"
+    }
+  ],
+  "tareas": [
+    {
+      "id": "t1",
+      "nombre": "Examen Cliente",
+      "estado": "Pendiente"
+    },
+    {
+      "id": "t2",
+      "nombre": "Examen Servidor",
+      "estado": "Realizada"
+    },
+    {
+      "id": "t3",
+      "nombre": "Examen Despliegue",
+      "estado": "Realizada"
+    },
+    {
+      "id": "t4",
+      "nombre": "Examen Interfaces",
+      "estado": "Pendiente"
+    },
+    {
+      "id": "t2131",
+      "nombre": "12451",
+      "estado": "Pendiente"
+    }
+  ]
+}
